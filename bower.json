@@ -1,0 +1,26 @@
+{
+  "name": "agilemongous.info",
+  "version": "0.1.0",
+  "homepage": "http://www.agilemongous.info",
+  "authors": [
+    "Curtis Schlak <curtis@curtissimo.com>"
+  ],
+  "description": "Web site and simulator for learning about managing large agile projects.",
+  "license": "WTFPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ractive": "~0.5.5",
+    "d3": "~3.4.11",
+    "foundation": "zurb/bower-foundation#~5.3.3",
+    "requirejs": "~2.1.14",
+    "ractive-touch": "~0.1.0",
+    "hammerjs": "~2.0.2"
+  }
+}

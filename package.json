@@ -1,0 +1,31 @@
+{
+  "name": "agilemongous.info",
+  "version": "0.1.0",
+  "description": "Web site and simulator for learning about managing large agile projects.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/curtissimo/agilemongous.info.git"
+  },
+  "author": "Curtis Schlak <curtis@curtissimo.com>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/curtissimo/agilemongous.info/issues"
+  },
+  "homepage": "https://github.com/curtissimo/agilemongous.info",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-filter": "^1.0.0",
+    "gulp-jslint": "^0.1.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-rimraf": "^0.1.0",
+    "gulp-sass": "^0.7.2",
+    "main-bower-files": "^1.0.2"
+  },
+  "dependencies": {
+    "express": "^4.7.2"
+  }
+}
