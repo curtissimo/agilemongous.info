@@ -4,19 +4,129 @@ $tan:        #FFE6B2;
 $red:        #FF5555;
 $purple:     #721873;
 
+@import url(http://fonts.googleapis.com/css?family=Schoolbell);
+
 html, body {
-  background-color: $light-blue;
+  background-color: white;
 }
 
-.banner .top-bar {
-  background-color: white;
-  height: auto;
+.agile-title {
+  font-family: Monaco, Consolas, Courier New, monospace;
+}
+
+.mongous-title {
+  font-family: 'Schoolbell', cursive;
+  font-weight: bold;
+  font-size: 140%;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.banner {
+  background-color: $red;
+  position: relative;
+}
+
+.banner-title {
+  margin: 0;
+  padding: .25em 0 0 0;
+  color: white;
+}
+
+.banner-subtitle {
+  margin: 0;
+  padding: 0 0 .25em 0;
+  color: white;
+}
+
+.banner-definition {
+  background-color: $tan;
+  font-family: Gill Sans, Times New Roman, serif;
+  border-bottom: 0.5em solid $red;
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.banner-definition-list {
+  font-size: 140%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: auto;
+  text-align: justify;
+  max-width: 40rem;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-monster {
+  position: absolute;
+  height: 128px;
+  width: 131px;
+  bottom: 10px;
+  // left: -195px;
+  opacity: .5;
+  z-index: 0;
+}
+
+.column-icon {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cutout-fill {
+  fill: white;
+  fill-opacity: 1;
+}
+
+.presentation-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .presentation-block {
-  background-color: $tan;
+  overflow: hidden;
+}
+
+.presentation-block-fill {
+  fill: $blue;
+  fill-opacity: 1;
+}
+
+.presentation-block-dot {
+  fill: $light-blue;
+  fill-opacity: 1;
+}
+
+.presentation-block-stroke {
+  stroke: $light-blue;
+  stroke-linejoin: miter;
+  stroke-opacity: 1;
+  stroke-miterlimit: 4;
+}
+
+.presentation-block-thick {
+  stroke-width: 42;
+}
+
+.presentation-block-normal {
+  stroke-width: 26;
 }
 
 .simulation-block {
-  background-color: $red;
+}
+
+@media only screen and (max-width: 40.063em) and (orientation: landscape) {
+  .medium-6 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .banner-title {
+    font-size: 3.5rem;
+  }
 }
