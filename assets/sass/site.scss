@@ -45,6 +45,7 @@ html, body {
   border-bottom: 0.5em solid $red;
   margin-bottom: 3em;
   position: relative;
+  overflow: hidden;
 }
 
 .banner-definition-list {
@@ -64,7 +65,7 @@ html, body {
   height: 128px;
   width: 131px;
   bottom: 10px;
-  // left: -195px;
+  left: -195px;
   opacity: .5;
   z-index: 0;
 }

@@ -12,7 +12,20 @@ require.config({
   }
 });
 
-require([ 'ractive', 'ractive-touch' ], function (Ractive) {
+require([ 'raf' ], function (requestAnimationFrame) {
   'use strict';
-  return Ractive;
+  var horace, style;
+  horace = document.getElementById('horace');
+
+  function step() {
+    var left;
+    style = window.getComputedStyle(horace);
+    left = parseInt(style.left || 0, 10) + 2;
+    if (left > window.innerWidth) {
+      left = -parseInt(style.width, 10);
+    }
+    horace.style.left = left + 'px';
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 });

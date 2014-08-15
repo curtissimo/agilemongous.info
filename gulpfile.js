@@ -50,11 +50,11 @@ gulp.task('jslint', [ 'jslint-client', 'jslint-server' ]);
 
 gulp.task('jslint-client', [ 'js-move' ], function () {
   'use strict';
-  var stream = gulp.src([ './public/js/site.js' ])
+  var stream = gulp.src([ './public/js/site.js', './public/js/raf.js' ])
     .pipe(jslint({
       browser: true,
       indent: 2,
-      predef: [ 'require' ]
+      predef: [ 'require', 'define' ]
     }));
   stream.on('error', function (e) {
     console.error(String(e));
